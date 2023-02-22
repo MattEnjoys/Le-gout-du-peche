@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&family=Merriweather:wght@300;400;700&display=swap');
+/* classes d'écritures */
+.redressed {
+	font-family: 'Redressed', cursive;
+}
+.merriweather {
+	font-family: 'Merriweather', serif;
+}
+/* Navbar */
+.cc-navbar {
+	background-color: rgba(0, 0, 0, 0.55);
+	font-family: 'Merriweather', serif;
+	/* Pour le petit trait sous la navbar */
+	box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.54);
+	z-index: 99;
+}
+/* Les onglets */
+.cc-navbar .nav-link {
+	border-bottom: 1px solid transparent;
+	transition: padding-bottom 0.4s ease-in-out, border-color 0.3s ease;
+}
+.cc-navbar .nav-link:hover {
+	padding-bottom: 20px;
+	border-bottom-color: var(--bs-teal);
+}
+/* Image des verres */
+.banner,
+.order-form {
+	/* center center pour centrer en axe x et y et fixed pour fixer l'image et no-repeat */
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/banniere2.jpg') center center fixed no-repeat;
+	background-size: cover;
+	height: 800px;
+}
+.order-form {
+	height: 500px;
+}
+.banner .banner-desc {
+	font-size: 48px;
+	font-weight: 400;
+	color: #fff;
+}
+
+.cc-menu {
+	/* center center pour centrer en axe x et y et fixed pour fixer et no-repeat */
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/banniere5.jpg') center center fixed no-repeat;
+	background-size: cover;
+	height: 1200px;
+}
+/* Bouton "Passer une commande" */
+.btn-order {
+	/* bs--teal est une  couleur native de Bootstrap */
+	color: var(--bs-teal);
+	border-color: var(--bs-teal);
+	transition: 0.5s;
+}
+.btn-order:hover,
+.btn-order:focus,
+.btn-order:active {
+	color: #fff;
+	background-color: var(--bs-teal);
+}
